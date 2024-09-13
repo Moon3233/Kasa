@@ -1,16 +1,45 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./Header.scss";
 
 function Header() {
     return (
         <header>
+            {/* Logo pour le bureau */}
+            <img
+                src="/images/desktop-logo.png"
+                alt="Logo Desktop"
+                className="logo-desktop"
+            />
+
+            {/* Logo pour le mobile */}
+            <img
+                src="/images/mobile-logo.png"
+                alt="Logo Mobile"
+                className="logo-mobile"
+            />
+
             <nav>
                 <ul>
                     <li>
-                        <Link to="/">Accueil</Link>
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) =>
+                                isActive ? "active" : undefined
+                            }
+                        >
+                            Accueil
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/about">À propos</Link>
+                        <NavLink
+                            to="/about"
+                            className={({ isActive }) =>
+                                isActive ? "active" : undefined
+                            }
+                        >
+                            A propos
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

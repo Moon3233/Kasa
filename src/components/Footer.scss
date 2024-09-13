@@ -1,0 +1,23 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    .desktop-header {
+        display: block;
+        width: 100%;
+    }
+    .mobile-header {
+        display: none;
+    }
+
+    /* Version mobile */
+    @media (max-width: 768px) {
+
+        .desktop-header {
+            display: none;
+        }
+        .mobile-header {
+            display: block;
+            width: 100%;
+        }
+    }
+}

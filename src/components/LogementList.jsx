@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import './LogementList.scss'; // Import des styles
+import './LogementList.scss';
 
 function LogementList() {
     const [logements, setLogements] = useState([]);

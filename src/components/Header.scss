@@ -1,0 +1,75 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
+    margin: 0.75rem 0 1rem 0;
+
+    nav {
+        ul {
+            display: flex;
+            gap: 68px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                color: black;
+                font-family: Montserrat;
+                font-weight: 500;
+
+                &.active {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .logo-desktop {
+        display: block;
+    }
+    .logo-mobile {
+        display: none;
+    }
+
+    /* Version mobile */
+    @media (max-width: 768px) {
+        max-width: 335px;
+        padding: 1rem;
+        margin: 0.25rem 0 0.75rem 0;
+
+        .logo-desktop {
+            display: none;
+        }
+        .logo-mobile {
+            display: block;
+            height: 47px;
+        }
+
+        nav {
+            align-items: center;
+            display: flex;
+            ul {
+                gap: 26px;
+            }
+            li {
+                a {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        .logo {
+            margin-bottom: 1rem; /* Ajoute un espace entre le logo et la navigation */
+            height: 50px; /* Réduit la taille du logo pour les mobiles */
+        }
+
+    }
+}
