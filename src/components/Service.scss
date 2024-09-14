@@ -1,7 +1,7 @@
-.logement-description {
+.service {
     width: 100%;
 
-    .description-header {
+    .service-header {
         cursor: pointer;
         background-color: #FF6060;
         padding: 0.5rem 1rem;
@@ -26,13 +26,12 @@
             margin-right: 1rem;
         }
 
-        /* Chevron orienté vers le haut lorsque la description est ouverte */
         .chevron.open {
             transform: rotate(90deg);
         }
     }
 
-    .description-content {
+    .service-content {
         overflow: hidden;
         background-color: rgba(246, 246, 246, 0.45);
         transform-origin: top;
@@ -41,6 +40,7 @@
         transition: transform 0.3s ease, opacity 0.3s ease;
         height: 0;
         padding: 0;
+        font-size: 1.125rem;
         font-family: Montserrat;
 
         &.open {
@@ -51,12 +51,13 @@
         }
 
         p {
+            padding: 0;
             margin: 0;
             font-size: 1.125rem;
         }
     }
     @media (min-width: 768px) and (max-width: 1024px) {
-            .description-header{
+            .service-header{
                 h2 {
                     font-size: 1.125rem;
                 }
@@ -64,7 +65,7 @@
         }
 
     @media (max-width: 767px) {
-            .description-header{
+            .service-header{
                 h2 {
                     font-size: 0.8125rem;
                 }
@@ -75,7 +76,7 @@
                 }
             }
             
-            .description-content {
+            .service-content {
                 p {
                     font-size: 0.75rem;
                 }

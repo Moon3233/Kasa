@@ -5,4 +5,7 @@
     font-family: Montserrat;
     margin: 0;
     flex-wrap: wrap;
+    @media (max-width: 768px) {
+        font-size: 1.125rem;
+    }
 }

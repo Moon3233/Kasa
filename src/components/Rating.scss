@@ -1,13 +1,20 @@
 .rating {
     display: flex;
     gap: 0.5rem;
+    .star {
+        font-size: 1.25em;
+        color: #e3e3e3; /* Couleur des étoiles non remplies */
+    }
+    .star.filled {
+        color: #FF6060; /* Couleur des étoiles remplies */
+    }
+    @media (max-width: 768px) {
+        .star {
+            font-size: 0.75rem;
+        }
+    }
 }
 
-.star {
-    font-size: 1.25em;
-    color: #e3e3e3; /* Couleur des étoiles non remplies */
-}
 
-.star.filled {
-    color: #FF6060; /* Couleur des étoiles remplies */
-}
+
+

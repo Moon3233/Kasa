@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import LogementDetails from './pages/LogementDetails'; 
 import Layout from './components/Layout.jsx';
+import NotFound from './components/NotFound.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/logement/:id" element={<LogementDetails />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </Router>

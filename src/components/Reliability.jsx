@@ -21,6 +21,8 @@ function Reliability() {
 
             <div className={`reliability-content ${isOpen ? "open" : ""}`}>
                 <p>
+                    Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
+                    régulièrement vérifiées par nos équipes.
                 </p>
             </div>
         </div>

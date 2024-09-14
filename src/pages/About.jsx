@@ -1,6 +1,9 @@
 import React from "react";
-import Reliability from "../components/Reliability";
 import "./About.scss";
+import Reliability from "../components/Reliability";
+import Respect from "../components/Respect";
+import Service from "../components/Service";
+import Safety from "../components/Safety";
 
 function About() {
     return (
@@ -14,6 +17,9 @@ function About() {
 
             <div className="faq">
                 <Reliability />
+                <Respect/>
+                <Service/>
+                <Safety/>
             </div>
         </div>
     );

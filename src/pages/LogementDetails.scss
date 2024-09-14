@@ -5,6 +5,7 @@
     flex-direction: column;
     gap: 2rem;
     width: 90%;
+    min-height: 62vh;
 
     .details {
         display: flex;
@@ -22,7 +23,23 @@
     }
     .more-details {
         display: flex;
-        justify-content: space-between;
         gap: 4.75rem;
+    }
+    @media (max-width: 768px) {
+        max-width: 335px;
+        .details {
+            flex-direction: column;
+            gap: 1.25rem;
+            .right {
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        .more-details {
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        
     }
 }

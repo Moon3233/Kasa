@@ -19,6 +19,15 @@
     .host-name p {
         margin: 0;
     }
+    @media (max-width: 768px) {
+        .host-picture {
+            width: 2rem;
+            height: 2rem;
+        }
+        .host-name {
+            font-size: 0.75rem;
+        }
+    }
 }
 
 
