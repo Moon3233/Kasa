@@ -1,10 +1,20 @@
 import React from "react";
+import Reliability from "../components/Reliability";
+import "./About.scss";
 
 function About() {
     return (
-        <div>
-            <h1>À propos de nous</h1>
-            <p>Ceci est la page à propos de l'application.</p>
+        <div className="about">
+
+            <img
+                    src="/images/faq-img.png"
+                    alt="Bannière de la section à propos"
+                    className="banner-image"
+                />
+
+            <div className="faq">
+                <Reliability />
+            </div>
         </div>
     );
 }

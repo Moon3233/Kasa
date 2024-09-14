@@ -1,7 +1,7 @@
-.logement-equipments {
+.reliability {
     width: 100%;
 
-    .equipments-header {
+    .reliability-header {
         cursor: pointer;
         background-color: #FF6060;
         padding: 0.5rem 1rem;
@@ -25,13 +25,13 @@
             margin-right: 1rem;
         }
 
-        /* Chevron orienté vers le haut lorsque la equipments est ouverte */
+        /* Chevron orienté vers le haut lorsque la reliability est ouverte */
         .chevron.open {
             transform: rotate(90deg);
         }
     }
 
-    .equipments-content {
+    .reliability-content {
         overflow: hidden;
         background-color: rgba(246, 246, 246, 0.45);
         transform-origin: top;
@@ -50,15 +50,14 @@
             height: auto;
         }
 
-        ul {
-            list-style: none;
+        p {
             padding: 0;
             margin: 0;
             font-size: 1.125rem;
         }
     }
     @media (min-width: 768px) and (max-width: 1024px) {
-            .equipments-header{
+            .reliability-header{
                 h2 {
                     font-size: 1.125rem;
                 }
@@ -66,7 +65,7 @@
         }
 
     @media (max-width: 767px) {
-            .equipments-header{
+            .reliability-header{
                 h2 {
                     font-size: 0.8125rem;
                 }
@@ -77,11 +76,9 @@
                 }
             }
             
-            .equipments-content {
-                ul {
-                    li {
-                        font-size: 0.75rem;
-                    }
+            .reliability-content {
+                p {
+                    font-size: 0.75rem;
                 }
             }
             

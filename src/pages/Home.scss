@@ -1,15 +1,11 @@
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 2rem;
 
     .home {
         max-width: 1240px;
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        margin: 0 2rem;
+        width: 90%;
 
         .banner {
             position: relative;
@@ -48,6 +44,7 @@ main {
     }
     @media (max-width: 768px) {
         .home {
+            max-width: 335px;
             .banner {
                 height: 111px;
 
@@ -73,4 +70,4 @@ main {
             }
         }
     }
-}
+

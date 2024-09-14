@@ -1,0 +1,25 @@
+.host {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1rem;
+    .host-picture {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .host-name {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: #FF6060;
+        font-family: Montserrat;
+        text-align: right;
+    }
+    .host-name p {
+        margin: 0;
+    }
+}
+
+
+

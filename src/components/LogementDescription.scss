@@ -1,10 +1,10 @@
 .logement-description {
-    width: 45%;
+    width: 100%;
 
     .description-header {
         cursor: pointer;
         background-color: #FF6060;
-        padding: 0.75rem 1rem;
+        padding: 0.5rem 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -13,14 +13,14 @@
 
         h2 {
             margin: 0;
-            font-size: 1.5rem;
+            font-size: 1rem;
             font-family: Montserrat;
         }
 
         .chevron {
             transition: transform 0.3s ease;
             transform: rotate(-90deg);
-            font-size: 2rem;
+            font-size: 1.5rem;
             user-select: none;
             margin-right: 1rem;
         }
@@ -38,13 +38,15 @@
         transform: scaleY(0);
         opacity: 0;
         transition: transform 0.3s ease, opacity 0.3s ease;
-        padding: 1rem;
+        height: 0;
+        padding: 0;
         font-family: Montserrat;
-        min-height: 20vh;
 
         &.open {
             transform: scaleY(1);
             opacity: 1;
+            padding: 1rem;
+            height: auto;
         }
 
         p {

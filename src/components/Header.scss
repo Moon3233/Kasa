@@ -9,6 +9,8 @@ header {
     margin: 0.75rem 0 1rem 0;
 
     nav {
+        display: flex;
+        align-items: center;
         ul {
             display: flex;
             gap: 68px;
