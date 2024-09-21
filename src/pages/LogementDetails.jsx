@@ -1,13 +1,13 @@
 import React from "react";
-import LogementDescription from "../components/LogementDescription";
+import LogementDescription from "../components/Collapse/Content/LogementDescription";
 import "./LogementDetails.scss";
-import Equipments from "../components/Equipments";
-import Pictures from "../components/Pictures";
-import Tags from "../components/Tags";
-import Rating from "../components/Rating";
-import Host from "../components/Host";
-import Title from "../components/Title";
-import Location from "../components/Location";
+import Equipments from "../components/Collapse/Content/Equipments";
+import Pictures from "../components/Pictures/Pictures";
+import Tags from "../components/Tags/Tags";
+import Rating from "../components/Rating/Rating";
+import Host from "../components/Host/Host";
+import Title from "../components/Title/Title";
+import Location from "../components/Location/Location";
 
 function LogementDetails() {
     return (

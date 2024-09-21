@@ -1,5 +1,5 @@
 import React from "react";
-import LogementList from "../components/LogementList";
+import LogementList from "../components/LogementList/LogementList";
 import './Home.scss';
 
 

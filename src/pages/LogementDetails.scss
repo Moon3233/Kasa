@@ -25,7 +25,7 @@
         display: flex;
         gap: 4.75rem;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 500px) {
         max-width: 335px;
         .details {
             flex-direction: column;

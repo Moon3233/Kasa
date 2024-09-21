@@ -1,7 +1,7 @@
-.safety {
+.collapse {
     width: 100%;
 
-    .safety-header {
+    .collapse-header {
         cursor: pointer;
         background-color: #FF6060;
         padding: 0.5rem 1rem;
@@ -26,12 +26,13 @@
             margin-right: 1rem;
         }
 
+        /* Chevron orienté vers le haut lorsque la section est ouverte */
         .chevron.open {
             transform: rotate(90deg);
         }
     }
 
-    .safety-content {
+    .collapse-content {
         overflow: hidden;
         background-color: rgba(246, 246, 246, 0.45);
         transform-origin: top;
@@ -50,37 +51,52 @@
             height: auto;
         }
 
+        /* Si le contenu est une liste */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                font-size: 1.125rem;
+            }
+        }
+
+        /* Si le contenu est un paragraphe */
         p {
             padding: 0;
             margin: 0;
             font-size: 1.125rem;
         }
     }
+
+    /* Media queries pour tablette */
     @media (min-width: 768px) and (max-width: 1024px) {
-            .safety-header{
-                h2 {
-                    font-size: 1.125rem;
-                }
+        .collapse-header {
+            h2 {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    /* Media queries pour mobile */
+    @media (max-width: 767px) {
+        .collapse-header {
+            h2 {
+                font-size: 0.8125rem;
+            }
+
+            .chevron {
+                font-size: 1rem;
+                margin-right: 0.25rem;
             }
         }
 
-    @media (max-width: 767px) {
-            .safety-header{
-                h2 {
-                    font-size: 0.8125rem;
-                }
-
-                .chevron {
-                    font-size: 1rem;
-                    margin-right: 0.25rem;
-                }
+        .collapse-content {
+            ul,
+            p {
+                font-size: 0.75rem;
             }
-            
-            .safety-content {
-                p {
-                    font-size: 0.75rem;
-                }
-            }
-            
+        }
     }
 }

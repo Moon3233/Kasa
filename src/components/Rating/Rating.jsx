@@ -14,7 +14,7 @@ function Rating() {
             .then((data) => {
                 const selectedLogement = data.find((logement) => logement.id === id);
                 if (selectedLogement) {
-                    setRating(parseFloat(selectedLogement.rating)); // Assure-toi que la note est un nombre
+                    setRating(parseFloat(selectedLogement.rating));
                 }
             })
             .catch((error) => console.error("Erreur lors du chargement du rating :", error));
