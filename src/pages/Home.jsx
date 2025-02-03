@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import LogementList from "../components/LogementList/LogementList";
 import './Home.scss';
 
 
 function Home() {
+    const [logements, setLogements] = useState([]);
+
+    useEffect(() => {
+        // Un seul fetch au chargement de la page pour récupérer tous les logements
+        fetch("/logements.json")
+            .then((response) => response.json())
+            .then((data) => setLogements(data))
+            .catch((error) =>
+                console.error("Erreur lors du chargement des logements :", error)
+            );
+    }, []);
+
     return (
         <div className="home">
             <div className="banner">
@@ -19,7 +31,7 @@ function Home() {
                 />
             </div>
 
-            <LogementList />
+            <LogementList logements={logements} /> {/* On passe logements en props */}
         </div>
     );
 }

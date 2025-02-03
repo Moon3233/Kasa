@@ -1,22 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import './LogementList.scss';
 
-function LogementList() {
-    const [logements, setLogements] = useState([]);
-
-    useEffect(() => {
-        // Chargement des données depuis le fichier logements.json
-        fetch("/logements.json")
-            .then((response) => response.json())
-            .then((data) => setLogements(data))
-            .catch((error) =>
-                console.error(
-                    "Erreur lors du chargement des logements :",
-                    error
-                )
-            );
-    }, []);
+function LogementList({ logements }) {
+    if (!logements || logements.length === 0) {
+        return <p>Chargement des logements...</p>;
+    }
 
     return (
         <div className="logement-list">
